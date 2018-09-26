@@ -28,7 +28,7 @@ namespace Abstrakcja_program
             {
                 Console.WriteLine($"Pole figury: {figura.Pole()}");
             }
-
+            //
 
 
             Console.ReadLine();
