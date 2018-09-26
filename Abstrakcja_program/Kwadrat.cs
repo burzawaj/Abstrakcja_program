@@ -9,7 +9,7 @@ namespace Abstrakcja_program
     class Kwadrat : Figura
     {
         double dlugoscBoku = 0;
-        public Kwadrat(int bok)
+        public Kwadrat(double bok)
         {
             dlugoscBoku = bok;
         }
@@ -25,7 +25,7 @@ namespace Abstrakcja_program
         {
             return Bok*Bok; //Math.Pow(Bok,2) to jest zapis potęgi wykorzystujący wbudowaną klasę Math
         }
-        public double Przekatna()
+        public virtual double Przekatna()
         {
             return Math.Sqrt(Math.Pow(Bok, 2)+ Math.Pow(Bok, 2));
         }
