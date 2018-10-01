@@ -19,11 +19,16 @@ namespace Abstrakcja_program
             Console.WriteLine("Obwod kola: {0}", mojeKolo.Obwod());//te formatowanie
             Console.WriteLine($"Pole kwadratu: {mojeKolo.Pole()}"); //i te też są poprawne i mają jednakowy efekt */
 
+            /*Trojkat mojTrojkat = new Trojkat(3, 4);
+            Console.WriteLine($"Przeciwprostokatna trojkata: {mojTrojkat.Przeciwprastokatna}");
+            Console.WriteLine("Obwod trojkata: {0}", mojTrojkat.Obwod());
+            Console.WriteLine($"Pole trojkata: {mojTrojkat.Pole()}"); */
+            
             Figura[] figury = new Figura[4];
             figury[0] = new Kwadrat(3);
             figury[1] = new Kolo(3);
             figury[2] = new Prostokat(4,3);
-            figury[3] = new Kwadrat(2);
+            figury[3] = new Trojkat(3,4);
 
             foreach (Figura figura in figury)
             {
