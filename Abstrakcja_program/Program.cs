@@ -23,12 +23,16 @@ namespace Abstrakcja_program
             Console.WriteLine($"Przeciwprostokatna trojkata: {mojTrojkat.Przeciwprastokatna}");
             Console.WriteLine("Obwod trojkata: {0}", mojTrojkat.Obwod());
             Console.WriteLine($"Pole trojkata: {mojTrojkat.Pole()}"); */
-            
+            Punkt PunktPoczatkowyTrojkat = new Punkt(1, 1);
+            Punkt PunktPoczatkowyKwadrat = new Punkt(15, 15);
+            Punkt PunktPoczatkowyProstokat = new Punkt(30, 30);
+            Punkt SrodekKola = new Punkt(45, 45);
+
             Figura[] figury = new Figura[4];
-            figury[0] = new Kwadrat(3);
-            figury[1] = new Kolo(3);
-            figury[2] = new Prostokat(4,3);
-            figury[3] = new Trojkat(3,4);
+            figury[0] = new Kwadrat(3,PunktPoczatkowyKwadrat);
+            figury[1] = new Kolo(3, SrodekKola);
+            figury[2] = new Prostokat(4,3, PunktPoczatkowyProstokat);
+            figury[3] = new Trojkat(3,4, PunktPoczatkowyTrojkat);
 
             foreach (Figura figura in figury)
             {
@@ -36,8 +40,7 @@ namespace Abstrakcja_program
                 Console.WriteLine($"Obwod figury: {figura.Obwod()}");
 
             }
-            //
-
+            
 
             Console.ReadLine();
         }

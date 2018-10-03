@@ -9,7 +9,7 @@ namespace Abstrakcja_program
     class Prostokat : Kwadrat
     {
         public double Bok2 { get; private set; }
-        public Prostokat(double bok, double bok2 ) : base(bok)
+        public Prostokat(double bok, double bok2, Punkt punktPoczatkowy) : base(bok, punktPoczatkowy)
         {
             Bok2 = bok2;
         }

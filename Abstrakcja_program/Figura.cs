@@ -10,5 +10,6 @@ namespace Abstrakcja_program
     {
         public abstract double Pole();
         public abstract double Obwod();
+        
     }
 }

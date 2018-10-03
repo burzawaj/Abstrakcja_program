@@ -9,7 +9,7 @@ namespace Abstrakcja_program
     class Kwadrat : Figura
     {
         double dlugoscBoku = 0;
-        public Kwadrat(double bok)
+        public Kwadrat(double bok, Punkt punktPoczatkowy)
         {
             dlugoscBoku = bok;
         }

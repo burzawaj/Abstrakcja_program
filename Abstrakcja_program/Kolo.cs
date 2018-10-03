@@ -10,7 +10,7 @@ namespace Abstrakcja_program
     {
         public double Radius { get; set; }
 
-        public Kolo(double radius)
+        public Kolo(double radius, Punkt SrodekOkregu)
         {
             Radius = radius;
         }

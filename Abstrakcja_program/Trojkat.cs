@@ -12,11 +12,23 @@ namespace Abstrakcja_program
         public double Przyprostokatna2 { get; private set; }
         public double Przeciwprastokatna { get; private set; }
 
-        public Trojkat(double przyprostokatna1, double przyprostokatna2)
+        enum kolorFigury
+        {
+            bialy,
+            czarny,
+            zielony,
+            niebieski,
+            czerwony,
+            zolty,
+
+        }
+
+        public Trojkat(double przyprostokatna1, double przyprostokatna2, Punkt punktPoczatkowy)
         {
             Przyprostokatna1 = przyprostokatna1;
             Przyprostokatna2 = przyprostokatna2;
             Przeciwprastokatna = Math.Sqrt(Math.Pow(Przyprostokatna1, 2) + Math.Pow(Przyprostokatna2, 2));
+            kolorFigury kolor1 = (kolorFigury).1;
         }
 
         public override double Obwod()
