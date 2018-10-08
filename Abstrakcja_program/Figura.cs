@@ -10,6 +10,16 @@ namespace Abstrakcja_program
     {
         public abstract double Pole();
         public abstract double Obwod();
-        
+        public abstract void WyswietlKolor();
+        public enum KolorFigury
+        {
+            Bialy,
+            Czarny,
+            Zielony,
+            Niebieski,
+            Czerwony,
+            Zolty,
+
+        }
     }
 }

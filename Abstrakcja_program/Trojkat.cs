@@ -11,25 +11,21 @@ namespace Abstrakcja_program
         public double Przyprostokatna1 { get; private set; }
         public double Przyprostokatna2 { get; private set; }
         public double Przeciwprastokatna { get; private set; }
+        public int XTrojkata { get; private set; }
+        public int YTrojkata { get; private set; }
 
-        enum kolorFigury
-        {
-            bialy,
-            czarny,
-            zielony,
-            niebieski,
-            czerwony,
-            zolty,
-
-        }
 
         public Trojkat(double przyprostokatna1, double przyprostokatna2, Punkt punktPoczatkowy)
         {
             Przyprostokatna1 = przyprostokatna1;
             Przyprostokatna2 = przyprostokatna2;
             Przeciwprastokatna = Math.Sqrt(Math.Pow(Przyprostokatna1, 2) + Math.Pow(Przyprostokatna2, 2));
-            kolorFigury kolor1 = (kolorFigury).1;
+            XTrojkata = punktPoczatkowy.X;
+            YTrojkata = punktPoczatkowy.Y;
+            
         }
+
+        public KolorFigury kolorTrojkata = KolorFigury.Czerwony;
 
         public override double Obwod()
         {
@@ -39,5 +35,10 @@ namespace Abstrakcja_program
         {
             return (Przyprostokatna1*Przyprostokatna2)/2;
         }
+        public override void WyswietlKolor()
+        {
+            Console.WriteLine("Kolor trojkata jest {0}", kolorTrojkata);
+        }
+
     }
 }

@@ -19,11 +19,15 @@ namespace Abstrakcja_program
             Console.WriteLine("Obwod kola: {0}", mojeKolo.Obwod());//te formatowanie
             Console.WriteLine($"Pole kwadratu: {mojeKolo.Pole()}"); //i te też są poprawne i mają jednakowy efekt */
 
-            /*Trojkat mojTrojkat = new Trojkat(3, 4);
-            Console.WriteLine($"Przeciwprostokatna trojkata: {mojTrojkat.Przeciwprastokatna}");
-            Console.WriteLine("Obwod trojkata: {0}", mojTrojkat.Obwod());
-            Console.WriteLine($"Pole trojkata: {mojTrojkat.Pole()}"); */
             Punkt PunktPoczatkowyTrojkat = new Punkt(1, 1);
+            //Trojkat mojTrojkat = new Trojkat(3, 4, PunktPoczatkowyTrojkat);
+            //Console.WriteLine($"Przeciwprostokatna trojkata: {mojTrojkat.Przeciwprastokatna}");
+            //Console.WriteLine("Obwod trojkata: {0}", mojTrojkat.Obwod());
+            //Console.WriteLine($"Pole trojkata: {mojTrojkat.Pole()}");
+            //mojTrojkat.WyswietlKolor();
+            //mojTrojkat.kolorTrojkata = Figura.KolorFigury.Zielony;
+            //mojTrojkat.WyswietlKolor();
+
             Punkt PunktPoczatkowyKwadrat = new Punkt(15, 15);
             Punkt PunktPoczatkowyProstokat = new Punkt(30, 30);
             Punkt SrodekKola = new Punkt(45, 45);
@@ -38,10 +42,12 @@ namespace Abstrakcja_program
             {
                 Console.WriteLine($"Pole figury: {figura.Pole()}");
                 Console.WriteLine($"Obwod figury: {figura.Obwod()}");
+                figura.WyswietlKolor();
+               
 
             }
-            
 
+           
             Console.ReadLine();
         }
     }
