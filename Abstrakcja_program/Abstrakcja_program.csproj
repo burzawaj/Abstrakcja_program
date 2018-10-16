@@ -43,13 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auto.cs" />
     <Compile Include="Figura.cs" />
+    <Compile Include="IDrukowalny.cs" />
+    <Compile Include="IPoruszalny.cs" />
     <Compile Include="Kolo.cs" />
     <Compile Include="Kwadrat.cs" />
+    <Compile Include="Pojazd.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prostokat.cs" />
     <Compile Include="Punkt.cs" />
+    <Compile Include="Samolot.cs" />
     <Compile Include="Trojkat.cs" />
   </ItemGroup>
   <ItemGroup>
